@@ -7,11 +7,9 @@ import Header from '../Header/Header';
 
 
 const Projects = () => (
-  <section nopadding id="projects">
+  <Section nopadding id="projects">
     <SectionDivider/>
-    <SectionTitle main>
-      Projects
-    </SectionTitle>
+    <SectionTitle main> Projects </SectionTitle>
     <GridContainer>
       {projects.map(({id,image,title,description,tags,visit,source})=>(
         <BlogCard key={id}>
@@ -43,7 +41,7 @@ const Projects = () => (
 
       ))}
     </GridContainer>
-  </section>
+  </Section>
 );
 
 export default Projects;
